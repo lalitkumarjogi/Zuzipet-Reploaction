@@ -1,0 +1,172 @@
+.parents{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,)auto;
+}
+#child2{
+   background-color: #1A1D27;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   padding: 15px;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sub-child2{
+    text-align: center;
+}
+
+#child2 h3{
+     color: white;
+     font-size: 1.6vw;
+     font-weight: 400;
+     text-align: center;
+     padding: 10px;
+}
+#child3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,auto);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sub-3{
+    text-align: center;
+    padding: 40px;
+}
+.sub-3 h1{
+      font-weight: 500;
+      font-size: 3vw;
+}
+.sub-3 h3{
+      font-weight: 200;
+      font-size: 1.6vw;
+      margin-top: -13px;
+}
+.sub-3 h4{
+      font-weight: 100;
+      font-size: 1.2vw;
+      font-weight: bold;
+}
+#child-4{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.child-4 img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+#child-5{
+   background-color: #F5E4E0;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   padding: 70px;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#child-5 h3{
+       text-align: center;
+}
+#child-6{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: repeat(1,auto);
+}
+.child-6{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+}
+.child-6 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+.sub-child6 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+
+/* ✅ Responsive layout for small screens (max-width: 550px) */
+@media (max-width: 550px) {
+
+  /* --- Parent Grid --- */
+  .parents {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+  }
+
+  /* --- Video Section (if any) --- */
+  .video-container {
+    height: 50vh; /* reduce height for small screens */
+  }
+
+  .frz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* --- Child 2 Section --- */
+  #child2 {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  #child2 h3 {
+    font-size: 20px;
+  }
+
+  /* --- Child 3 Section --- */
+  #child3 {
+    grid-template-columns: 1fr; /* single column on mobile */
+    grid-template-rows: auto;
+    border: none; /* optional: remove heavy border for clean mobile view */
+  }
+
+  .sub-3 {
+    padding: 20px;
+    border-bottom: 1px solid #ddd; /* optional separation */
+  }
+
+  /* --- Child 4 Section --- */
+  #child-4 {
+    grid-template-columns: 1fr; /* stack all items vertically */
+    grid-template-rows:auto;
+  }
+
+  .child-4 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* --- Child 5 Section --- */
+  #child-5 {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  #child-5 h3 {
+    font-size: 22px;
+  }
+
+  /* --- Child 6 Section --- */
+  #child-6 {
+    grid-template-columns: 1fr; /* single column */
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+  }
+
+  .child-6 {
+    padding: 20px;
+    text-align: center;
+  }
+}
