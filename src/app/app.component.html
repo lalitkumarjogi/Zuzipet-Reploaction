@@ -1,68 +1,125 @@
 <!---  Header code  -->
+<div class="collection-banner">
+  <div class="collection-track">
+    <div class="collection-text">SUMMER COLLECTION</div>
+    <div class="collection-text">SUMMER COLLECTION</div>
+    <div class="collection-text">SUMMER COLLECTION</div>
+    <div class="collection-text">SUMMER COLLECTION</div>
+    <div class="collection-text">SUMMER COLLECTION</div>
+    <div class="collection-text">SUMMER COLLECTION</div>
+  </div>
+</div>
 
-<header>
-    <div class="logo">
-    </div>
-    <nav>
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
-      <a href="#">Features</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
+
+<header class="header">
+  <div class="logo">MyLogo</div>
+
+  <nav [ngClass]="{'nav-links': true, 'active': menuOpen}">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+    <a href="#">Features</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="right-section">
+    <a routerLink="login" class="icon-link"><i class="fas fa-user"></i></a>
+    <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
     <button class="cta-btn">Get Started</button>
-  </header>
-
+    <div class="menu-icon" (click)="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</header>
 
 
  <div class="conatinerr" >
   <router-outlet></router-outlet>
  </div>
 
-
-
- <footer class="footer">
-  <div class="footer-container">
-    <!-- Member Section -->
-    <div class="footer-section">
-      <h3>Member</h3>
-      <img src="	https://airpets.in/assets/images/IPATA%20logo-01-01-01.png" alt="IPATA Member Logo" class="member-logo" />
-      <p>International Pet and Animal Transportation Association</p>
+<footer class="footer">
+  <!-- Top Section -->
+  <div class="footer-top">
+    <div class="feature">
+      <i class="icon">🚚</i>
+      <h3>FREE SHIPPING</h3>
+      <p>Free Shipping All Over India</p>
     </div>
-
-    <!-- Contact Section -->
-    <div class="footer-section">
-      <h3>Contact</h3>
-      <p>169, Ground Floor</p>
-      <p>Opp Animal Quarantine Office</p>
-      <p>Kapashhera, New Delhi - 110097 India</p>
-      <p>Email: <a href="mailto:contact@airpets.in">contact@airpets.in</a></p>
-      <p>Phone: <a href="tel:+919257123123">+91-9257-123-123</a></p>
+    <div class="feature">
+      <i class="icon">🎁</i>
+      <h3>BUDGET FRIENDLY</h3>
+      <p>Something For All</p>
     </div>
-
-    <!-- Subscribe Section -->
-    <div class="footer-section">
-      <h3>Subscribe</h3>
-      <p>Enter your e-mail to receive our latest updates & offers</p>
-      <form class="subscribe-form">
-        <input type="email" placeholder="Email address" required />
-        <button type="submit">➤</button>
-      </form>
+    <div class="feature">
+      <i class="icon">💰</i>
+      <h3>DISCOUNTS</h3>
+      <p>10% Off On Your First Order</p>
     </div>
-
-    <!-- Video Section -->
-   
+    <div class="feature">
+      <i class="icon">❤️</i>
+      <h3>PINTERESTY LOOKS</h3>
+      <p>Dreamy, Aesthetic Styles</p>
+    </div>
   </div>
 
+  <!-- Bottom Section -->
   <div class="footer-bottom">
-    <p>© 2021 AirPets Relocation Services Pvt. Ltd.</p>
-    <div class="footer-links">
-      <a href="#">FAQ</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms & Conditions</a>
+    <div class="footer-item about">
+      <h2 class="logo">Miakee</h2>
+      <p>
+        Miakee caters to all those fashionable women who love the trendy picks.
+        We have a fresh take on the season’s hottest trends and are always in a
+        fashion state of mind.
+      </p>
     </div>
+
+    <div class="footer-item">
+      <h4>QUICK LINKS</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Celeb Closet</a></li>
+        <li><a href="#">Clothing</a></li>
+        <li><a href="#">SALE</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Return & Exchange</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-item">
+      <h4>SHOP</h4>
+      <ul>
+        <li><a href="#">Dresses</a></li>
+        <li><a href="#">Tops</a></li>
+        <li><a href="#">Bottoms</a></li>
+        <li><a href="#">Co-Ords & Jumpsuits</a></li>
+        <li><a href="#">Lingerie & Loungewear</a></li>
+        <li><a href="#">Swimwear & Beachwear</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-item">
+      <h4>POLICIES</h4>
+      <ul>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Returns & Refunds</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-item contact">
+      <h4>GET IN TOUCH</h4>
+      <p>
+        For any queries, please reach out to us.<br />
+        Located In : Kolkata, WB<br />
+        Email : sales@miakee.com<br />
+        Phone : (+91)7003246319
+      </p>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copy">
+    <p>© Miakee Shop 2025. All Rights Reserved.</p>
   </div>
 </footer>
-
-
-
-  
