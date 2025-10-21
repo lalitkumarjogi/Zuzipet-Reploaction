@@ -8,7 +8,7 @@ import { Component, NgZone, OnDestroy, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit,OnDestroy {
 
    slides = [
-    { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ0szeZfTGKxR676XID4rtv0EDjCBIiMj1CA&s', text: 'Slide 1 Text' },
+    { image: 'https://anavila.com/wp-content/uploads/ete-new.webp', text: 'Slide 1 Text' },
     { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyDIOSZ-zWLf-O5zK8WH5WkEjTsxMicaRblw&s', text: 'Slide 2 Text' },
     { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqN4n5fSvY5TJNjKnharlinWTggcl3KNNhg&s', text: 'Slide 3 Text' },
     { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUpaoKT93C8hjH5ztI5cr1gCXmy0Nz8zt6VQ&s', text: 'Slide 4 Text' }
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit,OnDestroy {
         this.ngZone.run(() => {
           this.currentIndex = (this.currentIndex + 1) % this.slides.length;
         })
-      }, 2000);
+      }, 3000);
     });
   }
   

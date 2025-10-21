@@ -98,17 +98,18 @@
 
 .cta-btn {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #EE9787;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
+  font-size: 1vw;
   transition: background-color 0.3s ease;
 }
 
 .cta-btn:hover {
-  background-color: #0056b3;
+  background-color: black;
 }
 
 /* ===== MENU ICON ===== */
