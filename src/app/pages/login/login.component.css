@@ -1,0 +1,111 @@
+.container-wrapper {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.form-box {
+  background: #f9f9f9;
+  padding: 40px;
+  flex: 1;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+}
+
+label span {
+  color: red;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  color: #555;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+.btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: #000;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #000;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.note {
+  font-size: 13px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.note a {
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
