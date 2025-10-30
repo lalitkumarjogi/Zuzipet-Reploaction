@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,18 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    isModalOpen = false;
+   isShrunk = false;
 
-  openModal() {
-    this.isModalOpen = true;
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    // Shrink when scrollY > 50px
+    this.isShrunk = window.scrollY > 50;
   }
 
-  closeModal() {
-    this.isModalOpen = false;
-  }
-   menuOpen = false;
-
+  menuOpen = false;
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
+  }
+
+  openModal() {
+    // your modal logic
   }
 }

@@ -1,18 +1,14 @@
-<!---  Header code  -->
 <div class="collection-banner">
   <div class="collection-track">
-    <div class="collection-text">SUMMER COLLECTION</div>
-    <div class="collection-text">SUMMER COLLECTION</div>
-    <div class="collection-text">SUMMER COLLECTION</div>
-    <div class="collection-text">SUMMER COLLECTION</div>
-    <div class="collection-text">SUMMER COLLECTION</div>
-    <div class="collection-text">SUMMER COLLECTION</div>
+    <div class="collection-text">
+      ⚠️ BEWARE OF PUPPY SCAM !!! Scammers are using Zuzipets name and collecting money for sending dogs across India. 
+      Please note Zuzipets does not deal in selling or buying of pets.
+    </div>
   </div>
 </div>
 
-
-<header class="header">
-  <div class="logo">MyLogo</div>
+<header class="header" [class.shrink]="isShrunk">
+  <div class="logo"><img src="assets/logo1.jpeg" alt=""></div>
 
   <nav [ngClass]="{'nav-links': true, 'active': menuOpen}">
     <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
@@ -23,13 +19,13 @@
 
   <div class="right-section">
     <a routerLink="login" class="icon-link"><i class="fas fa-user"></i></a>
-    
-    <button class="cta-btn" (click)="openModal()">GET A QUOTE</button>
-    <div class="menu-icon" (click)="toggleMenu()">
+    <button class="cta-btn" >GET A QUOTE</button>
+    <div class="menu-icon" >
       <i class="fas fa-bars"></i>
     </div>
   </div>
 </header>
+
 
 
  <div class="conatinerr" >
@@ -38,28 +34,7 @@
 
 <footer class="footer">
   <!-- Top Section -->
-  <div class="footer-top">
-    <div class="feature">
-      <i class="icon">🚚</i>
-      <h3>FREE SHIPPING</h3>
-      <p>Free Shipping All Over India</p>
-    </div>
-    <div class="feature">
-      <i class="icon">🎁</i>
-      <h3>BUDGET FRIENDLY</h3>
-      <p>Something For All</p>
-    </div>
-    <div class="feature">
-      <i class="icon">💰</i>
-      <h3>DISCOUNTS</h3>
-      <p>10% Off On Your First Order</p>
-    </div>
-    <div class="feature">
-      <i class="icon">❤️</i>
-      <h3>PINTERESTY LOOKS</h3>
-      <p>Dreamy, Aesthetic Styles</p>
-    </div>
-  </div>
+ 
 
   <!-- Bottom Section -->
   <div class="footer-bottom">
@@ -128,12 +103,4 @@
 
 
 
-  <!-- Popup Modal -->
-  <div class="modal" [class.show]="isModalOpen">
-    <div class="modal-content">
-      <span class="close" (click)="closeModal()">&times;</span>
-      <h2>Popup Title</h2>
-      <p>This is a simple popup content. You can put forms, messages, or anything here.</p>
-      <button class="btn" (click)="closeModal()">Close</button>
-    </div>
-  </div>
+  
